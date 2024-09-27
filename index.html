@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Geschichtenschreiber-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Geschichtenschreiber</h1>
+        <div>
+            <input type="text" id="chapterTitle" placeholder="Kapitel Titel">
+            <textarea id="storyInput" placeholder="Schreibe deine Geschichte hier..." rows="10"></textarea>
+            <button id="saveButton">Kapitel Speichern</button>
+            <button id="previewButton">Vorschau</button>
+        </div>
+        <h2>Gespeicherte Kapitel</h2>
+        <div id="savedChapters"></div>
+        <div id="previewContainer" class="hidden">
+            <h2>Vorschau</h2>
+            <div id="previewContent"></div>
+            <button id="backButton">Zurück</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
